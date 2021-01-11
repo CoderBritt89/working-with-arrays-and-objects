@@ -39,21 +39,35 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
-}
+// function showValues( obj ) {
+//   for(let key in obj){
+//     return `${obj[key]}`
+//   }
+
+// }
 
 
 
 ////////// PROBLEM 2 //////////
 
 /*
-  Write a function called greaterThan10 that takes in an object. 
+  Write a function called greaterThan10 that takes in an object. DONE
   Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
 
-//Code Here
+
+function greaterThan10(obj){
+for(let key in obj ){
+  if (key > 10){
+    obj [key] = 0;
+  }
+
+}
+
+}
+
+greaterThan10();
 
 
 

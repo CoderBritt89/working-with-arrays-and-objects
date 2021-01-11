@@ -37,7 +37,9 @@ const {year} = carDetails;
 */
 
 function greeting( obj ) {
-  //Code Here
+  const {title} = obj
+  const {firstName} = obj
+  const {lastName} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -49,14 +51,31 @@ function greeting( obj ) {
 ////////// PROBLEM 3 //////////
 
 /*
-  Write a function called totalPopulation that will take in an object.
-  That object will have 4 properties named utah, california, texas and arizona.
+  Write a function called totalPopulation that will take in an object. --- DONE
+  That object will have 4 properties named utah, california, texas and arizona. 
   The property values will be numbers.
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
 
-//Code Here
+// const props = {
+// utah: 1234,
+// california: 2345,
+// texas: 4567,
+// arizona: 5678
+
+// }
+
+
+
+const totalPopulation = (obj) => {
+
+const {utah, california, texas, arizona} = obj
+
+const {utah, } = obj.
+
+
+}
 
 
 
@@ -70,7 +89,11 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+const ingredients = (obj) => {
+
+
+
+}
 
 
 
