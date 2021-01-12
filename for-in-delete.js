@@ -39,12 +39,14 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-// function showValues( obj ) {
-//   for(let key in obj){
-//     return `${obj[key]}`
-//   }
-
-// }
+function showValues(obj) {
+  let newString = ''
+  
+  for(let key in obj){
+  newString = newString + obj[key]
+  }
+return newString
+}
 
 
 
@@ -162,15 +164,11 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-const deleteFunc = (obj) => {
-for(let key in obj){
-if(obj[key] > 100){
-delete deleteTheBigNumbers.key
+for(let key in deleteTheBigNumbers){
+if(deleteTheBigNumbers[key] > 100){
+delete deleteTheBigNumbers[key]
 
 }
-}
-return deleteTheBigNumbers
-
 }
 
 
@@ -184,7 +182,16 @@ return deleteTheBigNumbers
   Return the updated object.
 */
 
-//Code Here
+
+const startsWithK = (obj) => {
+for(let key in obj){
+if(key[0] === 'k'){
+delete obj[key]
+
+}
+}
+return obj
+}
 
 
 
@@ -199,6 +206,13 @@ return deleteTheBigNumbers
   (hint: the method includes() may be of use...)
 */
 
-//Code Here
+const hiddenTreasure = (obj) => {
+for(let key in obj){
+if (!obj[key].includes('treasure')){
+  delete obj[key]
+}
+}
+return obj
+}
 
 
