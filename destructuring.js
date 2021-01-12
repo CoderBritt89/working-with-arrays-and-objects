@@ -72,8 +72,7 @@ const totalPopulation = (obj) => {
 
 const {utah, california, texas, arizona} = obj
 
-const {utah, } = obj.
-
+return (utah + california + texas + arizona)
 
 }
 

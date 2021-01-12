@@ -98,7 +98,7 @@ removeDuplicates(workplaceAccidents);
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-var cat = {
+let cat = {
   name: 'Fluffy',
   catFriends: [
     {
@@ -119,9 +119,9 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+
+let grumpyActivity = cat.catFriends[0].activities[1]
+let fluffy2ndFriend = cat.catFriends[1].name
 
 
 
@@ -161,14 +161,19 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+const recordCleaner =()=>{
+for(i=0; i< myCar.accidents.length; i++){
+myCar.accidents[i].atFaultForAccident = false
+} 
+}
 
+recordCleaner()
 
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
+let numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 // Do not edit the code above.
 
 /*
@@ -180,6 +185,41 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+
+let looper =()=> {
+for(i=0; i < numsArr.length; i++){
+if((numsArr[i] % 2) != 1){
+return numsArr[][] = 
+
+}
+
+}
+
+}
+
+
+// var evenNumbers = function(nums) {
+//   for (var i = 0; i < nums.length; i++) {
+
+//       if ((nums[i] % 2) != 1) {
+//           evens.push(nums[i]);
+//               console.log(evens);
+//       }
+//       else {
+//           odds.push(nums[i]);
+//               console.log(odds);
+//       }
+//   }
+
+// };
+
+// alert(evens);
+// alert(odds);
+
+
+
+
+
+
 
 
