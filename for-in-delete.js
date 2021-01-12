@@ -59,12 +59,12 @@
 
 function greaterThan10(obj){
 for(let key in obj ){
-  if (key > 10){
-    obj [key] = 0;
+  if (obj[key] > 10){
+    obj[key] = 0;
   }
 
 }
-
+return obj
 }
 
 greaterThan10();
@@ -79,7 +79,12 @@ greaterThan10();
   Return the updated object.
 */
 
-//Code Here
+const double =(obj)=>{
+for(let key in obj) {
+  obj[key] *= 2
+}
+return obj
+}
 
 
 
@@ -93,7 +98,18 @@ greaterThan10();
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
+const secrets = (obj)=>{
+let emptyString = ''
+for(let key in obj){
+if(key[0] === 's' && key[1] === 'h'){
+emptyString = emptyString + obj[key]
+
+}
+
+}
+return emptyString
+}
+
 
 
 
@@ -124,7 +140,10 @@ greaterThan10();
   Delete the property password and return the object.
 */
 
-//Code Here
+const removePassword = (obj) => {
+delete obj.password 
+return obj
+}
 
 
 
@@ -143,7 +162,16 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-//Code Here
+const deleteFunc = (obj) => {
+for(let key in obj){
+if(obj[key] > 100){
+delete deleteTheBigNumbers.key
+
+}
+}
+return deleteTheBigNumbers
+
+}
 
 
 
